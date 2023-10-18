@@ -5,9 +5,9 @@
 firstNumber <- as.integer(readline('Enter your first number: '))
 secondNumber <- as.integer(readline('Enter your second number: '))
 
-if (firstNumber < secondNumber) {
+if (firstNumber > secondNumber) {
   cat(sprintf('%s is greater than %s.', firstNumber, secondNumber))
-} else if (firstNumber > secondNumber) {
+} else if (firstNumber < secondNumber) {
   cat(sprintf('%s is greater than %s.', secondNumber, firstNumber))
 } else if (firstNumber == secondNumber) {
   cat(sprintf('%s and %s are equal.', firstNumber, secondNumber))
